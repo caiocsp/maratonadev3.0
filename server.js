@@ -56,7 +56,7 @@ server.post("/", function(req, res){
     db.query(query, [name, email, blood], function(err) {
         if (err) return res.send("Erro no banco de dados");//Database error
         
-        //Fluxo ideal
+        //Fluxo ideal - Ideal flow
         return res.redirect("/");
     });
 });
