@@ -11,8 +11,8 @@ server.use(express.urlencoded({ extended : true }));
 // Habilitar a conexão com o banco de dados - Enable connection to the database
 const Pool = require('pg').Pool
 const db = new Pool({//Nesse caso por exemplo, utilizamos o Postgres, mas a conexão fica a sua preferência - In this example, we use Postgres, but the connection is your preference
-    user: 'postgres',
-    password: '@12345',
+    user: '',//user's choice
+    password: '',//user's choice
     host: 'localhost',
     port: 5432,
     database: 'donate'
