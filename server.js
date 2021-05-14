@@ -49,7 +49,7 @@ server.post("/", function(req, res){
         return res.send("Todos os campos são obrigatórios!");//All fields are mandatory!
     }
 
-    // Inserir os valores no bando de dados - Insert the values ​​in the database
+    // Inserir os valores no banco de dados - Insert the values ​​in the database
     const query = `INSERT INTO donors ("name", "email", "blood")
     VALUES ($1, $2, $3)`;
 
